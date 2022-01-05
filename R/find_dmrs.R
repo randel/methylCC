@@ -82,7 +82,8 @@
   }
   
   # create training object to identify DMRs
-  IDs = c("Gran", "CD4T", "CD8T", "Bcell","Mono", "NK")
+  # IDs = c("Gran", "CD4T", "CD8T", "Bcell","Mono", "NK")
+  IDs = c("Eos", 'Neu',"Mono", "CD4T", "CD8T", "Bcell", "NK")
   mset_train_flow_sort <- mset_train_flow_sort[, 
               (pData(mset_train_flow_sort)$CellType %in% IDs) ]
   
